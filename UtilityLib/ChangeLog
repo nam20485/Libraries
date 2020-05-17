@@ -1,0 +1,72 @@
+2014-04-26  Nathan Miller  <nmiller217@gmail.com>
+
+	* ChannelRegistry.cs:
+	* RemotingPeerRegistry.cs: 
+
+2014-04-25  Nathan Miller  <nmiller217@gmail.com>
+
+	* UtilityLib.csproj:
+	* RemoteObject.cs:
+	* RemotingPeer.cs:
+	* RemotingClient.cs:
+	* RemotingListener.cs:
+	* RemotingClientFactory.cs:
+	* RemotingListenerRegistry.cs: 
+
+2013-11-07  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs:
+	* UtilityLib.csproj:
+	* MessageConsumer.cs: 
+
+2013-11-05  Nathan Miller  <nmiller217@gmail.com>
+
+	* UtilityLib.csproj:
+	* SingleInstanceProgram.cs: 
+
+2013-11-05  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-04  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-04  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-04  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-04  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-04  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs:
+	* Settings.cs:
+	* ImageHandling.cs: 
+
+2013-11-03  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* Logger.cs: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* KeyPress.cs: 
+

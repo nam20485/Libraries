@@ -1,0 +1,29 @@
+2013-11-04  Nathan Miller  <nmiller217@gmail.com>
+
+	* WindowsHook.cs:
+	* KeyRemapper.cs:
+	* AsyncWindowsHook.cs:
+	* LowLevelKeyboardHook.cs: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* WindowsHookLib.csproj: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* KeyRemapper.cs: 
+
+2013-11-02  Nathan Miller  <nmiller217@gmail.com>
+
+	* WindowsHook.cs:
+	* AsyncWindowsHook.cs: 
+
+2013-11-01  Nathan Miller  <nmiller217@gmail.com>
+
+	* WindowsHook.cs:
+	* LowLevelKeyboardHook.cs: 
+
+2013-10-30  Nathan Miller  <nmiller217@gmail.com>
+
+	* LowLevelKeyboardHook.cs: 
+

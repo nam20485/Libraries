@@ -1,0 +1,12 @@
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Release\UtilityLib.csproj.CoreCompileInputs.cache
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Release\UtilityLib.csprojAssemblyReference.cache
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\UtilityLib.dll.config
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\UtilityLib.dll
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\UtilityLib.pdb
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\Microsoft.Win32.TaskScheduler.xml
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\it\Microsoft.Win32.TaskScheduler.resources.dll
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\bin\Release\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Release\UtilityLib.csproj.CopyComplete
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Release\UtilityLib.dll
+C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Release\UtilityLib.pdb

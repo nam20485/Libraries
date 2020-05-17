@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6EB93F5-3B9B-465E-A6F5-49DEA0EF7506}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Libraries.UtilityLib</RootNamespace>
+    <AssemblyName>UtilityLib</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SIMULATE_KEYS_SENDINPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>..\thirdparty\TaskScheduler\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CircularQueue.cs" />
+    <Compile Include="File\AsyncFileWriter.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Settings\Setting.cs" />
+    <Compile Include="Windows\ControlScaling.cs" />
+    <Compile Include="Windows\DisplayDetection.cs" />
+    <Compile Include="Disposeable\DisposeableResource.cs" />
+    <Compile Include="Windows\DoubleBuffer.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="File\FileWriter.cs" />
+    <Compile Include="AsyncWriter.cs" />
+    <Compile Include="Windows\ImageHandling.cs" />
+    <Compile Include="File\LocalFileWriter.cs" />
+    <Compile Include="Logger\LocalLogger.cs" />
+    <Compile Include="Logger\LocalStaticLogger.cs" />
+    <Compile Include="Serializer.cs" />
+    <Compile Include="Keys\KeyEventSimulator.cs" />
+    <Compile Include="Keys\KeyPress.cs" />
+    <Compile Include="Logger\Logger.cs" />
+    <Compile Include="Disposeable\ManagedResource.cs" />
+    <Compile Include="Disposeable\NativeResource.cs" />
+    <Compile Include="Windows\NativeWindowEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="SingleInstance.cs" />
+    <Compile Include="Logger\StaticLogger.cs" />
+    <Compile Include="TaskSchedulerUtils.cs" />
+    <Compile Include="Windows\Win32API.cs" />
+    <Compile Include="Windows\WinFormUtils.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Notification\IChangeNotifiable.cs" />
+    <Compile Include="Notification\ObservableCollectionEx.cs" />
+    <Compile Include="Notification\NotifyPropertyChangedEx.cs" />
+    <Compile Include="Notification\INotifyPropertyChangedEx.cs" />
+    <Compile Include="Windows\WindowFocus.cs" />
+    <Compile Include="File\WriteToFileInvocation.cs" />
+    <Compile Include="Callback\ArgumentlessInvocation.cs" />
+    <Compile Include="Callback\CallbackArguments.cs" />
+    <Compile Include="Callback\CallbackInvocation.cs" />
+    <Compile Include="Callback\NotifyCallbackInvocation.cs" />
+    <Compile Include="Callback\RoutineInvocation.cs" />
+    <Compile Include="Callback\UserCallbackInvocation.cs" />
+    <Compile Include="Callback\VoidRoutineInvocation.cs" />
+    <Compile Include="Callback\VoidVoidInvocation.cs" />
+    <Compile Include="Windows\WindowFocusWatcher.cs" />
+    <Compile Include="Reflection\Reflection.cs" />
+    <Compile Include="Reflection\InterfaceFactory.cs" />
+    <Compile Include="Xml\FormattedFile.cs" />
+    <Compile Include="JSON\JSONSerializer.cs" />
+    <Compile Include="Xml\XmlSerializer.cs" />
+    <Compile Include="Storage\FileStorage.cs" />
+    <Compile Include="Storage\HttpStorage.cs" />
+    <Compile Include="Storage\LocalStorage.cs" />
+    <Compile Include="Xml\LocalFile.cs" />
+    <Compile Include="Xml\LocalXmlFile.cs" />
+    <Compile Include="Settings\LocalSettings.cs" />
+    <Compile Include="Settings\LocalXmlSettings.cs" />
+    <Compile Include="Settings\HttpSettings.cs" />
+    <Compile Include="Settings\LocalJSONSettings.cs" />
+    <Compile Include="JSON\LocalJSONFile.cs" />
+    <Compile Include="Xml\HttpFile.cs" />
+    <Compile Include="Settings\MapSettings.cs" />
+    <Compile Include="PropertySetter.cs" />
+    <Compile Include="TimerEx.cs" />
+    <Compile Include="Windows\RegKeyMonitor.cs" />
+    <Compile Include="Xml\XmlNodeSerializer.cs" />
+    <Compile Include="ProgramBase.cs" />
+    <Compile Include="Windows\RegKey.cs" />
+    <Compile Include="Windows\RegistryKeyChangedEventArgs.cs" />
+    <Compile Include="Windows\NotifiableRegKey.cs" />
+    <Compile Include="Threading\ThreadLoop.cs" />
+    <Compile Include="Threading\ThreadProc.cs" />
+    <Compile Include="Threading\Worker.cs" />
+    <Compile Include="Threading\WorkerPool.cs" />
+    <Compile Include="Threading\WaitHandleList.cs" />
+    <Compile Include="Threading\ThreadDelegate.cs" />
+    <Compile Include="Threading\DelegatedWorkerPool.cs" />
+    <Compile Include="Threading\SynchronizedList.cs" />
+    <Compile Include="Threading\DelegatedWorker.cs" />
+    <Compile Include="Remoting\RemotingListener.cs" />
+    <Compile Include="Remoting\RemotingClient.cs" />
+    <Compile Include="Remoting\RemotingPeer.cs" />
+    <Compile Include="Remoting\RemotingObject.cs" />
+    <Compile Include="Remoting\GlobalListenerRegistry.cs" />
+    <Compile Include="Remoting\GlobalClientFactory.cs" />
+    <Compile Include="Remoting\ListenerRegistry.cs" />
+    <Compile Include="Remoting\PeerRegistry.cs" />
+    <Compile Include="Remoting\ClientFactory.cs" />
+    <Compile Include="Remoting\ChannelServicesEx.cs" />
+    <Compile Include="Remoting\ChannelRegistry.cs" />
+    <Compile Include="Remoting\GlobalChannelRegistry.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <DotNetNamingPolicy DirectoryNamespaceAssociation="PrefixedFlat" ResourceNamePolicy="FileFormatDefault" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

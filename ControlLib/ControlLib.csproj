@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5552D3F-BFC1-460D-A1A6-F868493F14B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Libraries.ControlLib</RootNamespace>
+    <AssemblyName>ControlLib</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0219</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileListControl.Designer.cs">
+      <DependentUpon>FileListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BreadCrumbProgressControl\BreadCrumbProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BreadCrumbProgressControl\BreadCrumbProgressControl.Designer.cs">
+      <DependentUpon>BreadCrumbProgressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BreadCrumbProgressControl\BreadCrumbStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BreadCrumbProgressControl\BreadCrumbStep.Designer.cs">
+      <DependentUpon>BreadCrumbStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaptionlessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptionlessForm.Designer.cs">
+      <DependentUpon>CaptionlessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormattableRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormattableRichTextBox.Designer.cs">
+      <DependentUpon>FormattableRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogEntryRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogEntryRichTextBox.Designer.cs">
+      <DependentUpon>LogEntryRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressRichTextBox.Designer.cs">
+      <DependentUpon>ProgressRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SignalCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignalCheckBox.Designer.cs">
+      <DependentUpon>SignalCheckBox.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UtilityLib\UtilityLib.csproj">
+      <Project>{B6EB93F5-3B9B-465E-A6F5-49DEA0EF7506}</Project>
+      <Name>UtilityLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BreadCrumbProgressControl\BreadCrumbProgressControl.resx">
+      <DependentUpon>BreadCrumbProgressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileListControl.resx">
+      <DependentUpon>FileListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\arrowLink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\barLink.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
