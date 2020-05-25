@@ -1,2 +1,0 @@
-C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Debug\UtilityLib.csprojAssemblyReference.cache
-C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Debug\UtilityLib.csproj.CoreCompileInputs.cache
