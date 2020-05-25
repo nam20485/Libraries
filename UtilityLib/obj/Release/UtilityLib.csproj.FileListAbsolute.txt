@@ -1,7 +1,0 @@
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\bin\Release\UtilityLib.dll.config
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\bin\Release\UtilityLib.dll
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\bin\Release\UtilityLib.pdb
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Release\UtilityLib.csproj.CoreCompileInputs.cache
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Release\UtilityLib.dll
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Release\UtilityLib.pdb
-C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Release\UtilityLib.csprojAssemblyReference.cache
