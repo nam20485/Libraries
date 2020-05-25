@@ -72,9 +72,6 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.Win32.TaskScheduler">
-      <HintPath>..\thirdparty\TaskScheduler\Microsoft.Win32.TaskScheduler.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,6 +88,12 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="File\FileWriter.cs" />
     <Compile Include="AsyncWriter.cs" />
+    <Compile Include="Windows\FormEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FormEx.Designer.cs">
+      <DependentUpon>FormEx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ImageHandling.cs" />
     <Compile Include="File\LocalFileWriter.cs" />
     <Compile Include="Logger\LocalLogger.cs" />

@@ -1,2 +1,6 @@
-C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Debug\UtilityLib.csprojAssemblyReference.cache
-C:\Users\nam20485\Source\repos\WindowExtensions\libraries\UtilityLib\obj\Debug\UtilityLib.csproj.CoreCompileInputs.cache
+C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\bin\Debug\UtilityLib.dll.config
+C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\bin\Debug\UtilityLib.dll
+C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\bin\Debug\UtilityLib.pdb
+C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Debug\UtilityLib.csproj.CoreCompileInputs.cache
+C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Debug\UtilityLib.dll
+C:\Users\nam20485\Source\WindowExtensions\Libraries\UtilityLib\obj\Debug\UtilityLib.pdb
